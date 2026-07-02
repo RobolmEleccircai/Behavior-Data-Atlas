@@ -1,0 +1,2001 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>BEHAVIOR 机器人资源图谱</title>
+<style>
+@page {
+  size: A3 landscape;
+  margin: 12mm;
+}
+html {
+  font-family: "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  color: #172033;
+  font-size: 11pt;
+  line-height: 1.55;
+}
+body {
+  margin: 0 auto;
+  max-width: none;
+}
+h1, h2, h3 {
+  color: #132b50;
+  page-break-after: avoid;
+}
+h1 {
+  font-size: 25pt;
+  border-bottom: 2px solid #315b8a;
+  padding-bottom: 7px;
+}
+h2 {
+  font-size: 18pt;
+  margin-top: 24px;
+  border-bottom: 1px solid #a9bad0;
+}
+h3 { font-size: 14pt; }
+a {
+  color: #155ca2;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+  font-size: 9pt;
+  page-break-inside: auto;
+}
+thead {
+  display: table-header-group;
+}
+tr {
+  page-break-inside: avoid;
+}
+th, td {
+  border: 1px solid #9cacbf;
+  padding: 5px 7px;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+th {
+  background: #dce8f5;
+  color: #162c48;
+}
+tr:nth-child(even) td {
+  background: #f5f8fb;
+}
+img {
+  max-width: 150px;
+  max-height: 110px;
+  object-fit: contain;
+}
+code {
+  font-family: Consolas, monospace;
+  background: #edf1f5;
+  padding: 1px 4px;
+}
+pre {
+  white-space: pre-wrap;
+  background: #edf1f5;
+  padding: 10px;
+}
+blockquote {
+  border-left: 4px solid #7294ba;
+  margin-left: 0;
+  padding-left: 12px;
+  color: #42556d;
+}
+</style>
+</head>
+<body><h1>BEHAVIOR 网站资源、机器人与贡献者论文型号调研</h1>
+<p>核验日期：2026-07-02
+官网快照：2026-07-02T07:46:02.019456+00:00</p>
+<h2>执行摘要与数量统计</h2>
+<ul>
+<li>网站资源共 15 项。</li>
+<li>官网贡献者共 57 人。</li>
+<li>网站机器人页面实际整理出 14 个条目。</li>
+<li>已核验贡献者—论文—型号记录共 32 条，覆盖
+  13 位当前官网贡献者、2 篇论文。</li>
+<li>待全文核验的贡献者—论文候选共 70 条。</li>
+</ul>
+<h3>网站机器人类型数量</h3>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>数量</th>
+<th>型号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>纯轮式移动机器人</td>
+<td>4</td>
+<td>TurtleBot 2 / Kobuki、LoCoBot、Clearpath Husky、Fetch Robotics Freight</td>
+</tr>
+<tr>
+<td>固定机械臂</td>
+<td>4</td>
+<td>Franka Research 3、Trossen ViperX 300 6DOF、A1、Franka Research 3 mounted cart</td>
+</tr>
+<tr>
+<td>轮式机械臂机器人</td>
+<td>5</td>
+<td>Fetch、PAL Robotics TIAGo (dual-arm configuration)、Hello Robot Stretch、Galaxea R1、Galaxea R1 Pro</td>
+</tr>
+<tr>
+<td>VR 双臂代理</td>
+<td>1</td>
+<td>BehaviorRobot</td>
+</tr>
+</tbody>
+</table>
+<h3>已核验论文中的型号使用排名</h3>
+<p>排名主指标为“贡献者—论文—型号”记录数；贡献者数和论文数用于辅助判断。以下均取前 5 名，
+当前证据不足 5 个型号时只列已有型号。</p>
+<h4>纯轮式移动机器人</h4>
+<h5>官网明确提及的型号</h5>
+<p>BEHAVIOR 官网明确列出了以下 4 种纯轮式移动机器人：</p>
+<table>
+<thead>
+<tr>
+<th>官网型号</th>
+<th>图片</th>
+<th>厂商</th>
+<th>机械臂状态</th>
+<th>官网证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TurtleBot 2 / Kobuki</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/Turtlebot.png"><img src="assets/robots/Turtlebot.png" alt="TurtleBot 2 / Kobuki" width="120"></a></td>
+<td>Yujin Robot / Open Robotics</td>
+<td></td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+</tr>
+<tr>
+<td>LoCoBot</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/Locobot.png"><img src="assets/robots/Locobot.png" alt="LoCoBot" width="120"></a></td>
+<td>Trossen Robotics / Interbotix</td>
+<td>LoCoBot arm (disabled)</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+</tr>
+<tr>
+<td>Clearpath Husky</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/Husky.png"><img src="assets/robots/Husky.png" alt="Clearpath Husky" width="120"></a></td>
+<td>Clearpath Robotics</td>
+<td></td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+</tr>
+<tr>
+<td>Fetch Robotics Freight</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/Freight.png"><img src="assets/robots/Freight.png" alt="Fetch Robotics Freight" width="120"></a></td>
+<td>Fetch Robotics</td>
+<td></td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+</tr>
+</tbody>
+</table>
+<p>其中 LoCoBot 实物平台带有机械臂，但 BEHAVIOR / OmniGibson 文档明确说明其模型中的机械臂被禁用
+并固定在底座上，因此本报告按官网运行配置把它归入纯轮式移动机器人。</p>
+<h5>已核验贡献者论文中的使用排名</h5>
+<p><em>无记录。</em></p>
+<p>当前已核验的贡献者论文中，没有发现上述 4 种纯轮式移动机器人作为实验或数据采集平台的明确
+型号证据，因此暂时无法给出论文使用频次排名。这里的“无记录”只表示论文核验结果为空，
+不表示官网没有提及这些机器人。</p>
+<h4>机械臂型号</h4>
+<p>此处统计论文实际使用的机械臂，包括集成在轮式机械臂机器人上的机械臂；它不同于上方网站清单中
+“固定机械臂”这一平台类别。</p>
+<table>
+<thead>
+<tr>
+<th>排名</th>
+<th>型号</th>
+<th>记录数</th>
+<th>贡献者数</th>
+<th>论文数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Galaxea R1 integrated arm (6-DoF)</td>
+<td>20</td>
+<td>13</td>
+<td>2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>PAL Robotics TIAGo integrated arm (7-DoF)</td>
+<td>12</td>
+<td>12</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h4>轮式机械臂机器人</h4>
+<table>
+<thead>
+<tr>
+<th>排名</th>
+<th>型号</th>
+<th>记录数</th>
+<th>贡献者数</th>
+<th>论文数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Galaxea R1</td>
+<td>20</td>
+<td>13</td>
+<td>2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>12</td>
+<td>12</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>当前第一名是 Galaxea R1，第二名是 PAL Robotics TIAGo（双臂配置）。该结论只适用于已经完成
+型号证据核验的论文集合，不代表机器人学全部论文的市场占有率。</p>
+<h2>采购价格参考</h2>
+<p>价格快照日期：2026-07-02。人民币换算采用 2026-07-01
+的统一参考汇率（USD/CNY=6.7945，
+EUR/CNY=7.7342，
+JPY/CNY=0.04176）。人民币金额仅用于横向比较，
+不包含来源未明确的税费、运费、关税、安装、软件许可或集成服务。</p>
+<h3>各类别公开数字新品参考范围</h3>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>具有公开数字新品参考的报价数</th>
+<th>最低人民币参考</th>
+<th>最高人民币参考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>纯轮式移动机器人</td>
+<td>3</td>
+<td>¥29,012</td>
+<td>¥208,823</td>
+</tr>
+<tr>
+<td>固定机械臂</td>
+<td>2</td>
+<td>¥20,377</td>
+<td>¥256,621</td>
+</tr>
+<tr>
+<td>轮式机械臂机器人</td>
+<td>3</td>
+<td>¥203,495</td>
+<td>¥475,608</td>
+</tr>
+</tbody>
+</table>
+<p>这里的“新品参考”允许同系列当前代或后继配置，但价格表会明确标注匹配关系；历史价、
+停产价和低置信第三方估值不进入上述范围。正式价格表不收录二手报价。</p>
+<h3>纯轮式移动机器人价格</h3>
+<table>
+<thead>
+<tr>
+<th>BEHAVIOR型号</th>
+<th>图片</th>
+<th>销售型号或配置</th>
+<th>匹配关系</th>
+<th>价格性质</th>
+<th>供应状态</th>
+<th>原币价格</th>
+<th>人民币参考</th>
+<th>来源</th>
+<th>可信度</th>
+<th>价格链接</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TurtleBot 2 / Kobuki</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/Turtlebot.png"><img src="assets/robots/Turtlebot.png" alt="TurtleBot 2 / Kobuki" width="120"></a></td>
+<td>TurtleBot 2 complete kit</td>
+<td>historical launch estimate</td>
+<td>historical new-price estimate</td>
+<td>discontinued</td>
+<td>约 USD 1,500.00</td>
+<td>约 ¥10,192</td>
+<td>IEEE Spectrum</td>
+<td>medium</td>
+<td>https://spectrum.ieee.org/amp/turtlebot-2-prototypes-unveiled-at-roscon-2-2650266563</td>
+<td>Contemporaneous 2012 estimate of about USD 1,500 for a complete TurtleBot 2; not a firm quote or current offer.</td>
+</tr>
+<tr>
+<td>LoCoBot</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/Locobot.png"><img src="assets/robots/Locobot.png" alt="LoCoBot" width="120"></a></td>
+<td>LoCoBot V4 PX100 with LiDAR (ROS 2)</td>
+<td>same family configuration</td>
+<td>new</td>
+<td>sold out / built to order timing by sales</td>
+<td>USD 4,269.95</td>
+<td>约 ¥29,012</td>
+<td>Trossen Robotics</td>
+<td>high</td>
+<td>https://store.trossenrobotics.com/products/px100-locobot-2</td>
+<td>Official LoCoBot family configuration; the BEHAVIOR simulation disables and fixes its arm.</td>
+</tr>
+<tr>
+<td>Clearpath Husky</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/Husky.png"><img src="assets/robots/Husky.png" alt="Clearpath Husky" width="120"></a></td>
+<td>Clearpath Husky A200</td>
+<td>exact</td>
+<td>new</td>
+<td>order item</td>
+<td>EUR 23,353.75</td>
+<td>约 ¥180,623</td>
+<td>MYBOTSHOP</td>
+<td>medium</td>
+<td>https://www.mybotshop.de/Clearpath</td>
+<td>Exact A200 new mobile-base listing; optional sensors, computer and manipulators are separate.</td>
+</tr>
+<tr>
+<td>Clearpath Husky</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/Husky.png"><img src="assets/robots/Husky.png" alt="Clearpath Husky" width="120"></a></td>
+<td>Clearpath Husky A300</td>
+<td>successor/reference only</td>
+<td>new</td>
+<td>order item</td>
+<td>起价 EUR 27,000.00</td>
+<td>约 ¥208,823</td>
+<td>Generation Robots</td>
+<td>medium</td>
+<td>https://www.generationrobots.com/en/404267-husky-a300-ugv-mobile-base-1807.html</td>
+<td>Current A300 successor reference only; it is not assigned as the A200 price.</td>
+</tr>
+<tr>
+<td>Fetch Robotics Freight</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/Freight.png"><img src="assets/robots/Freight.png" alt="Fetch Robotics Freight" width="120"></a></td>
+<td>Fetch Robotics Freight base</td>
+<td>historical base model</td>
+<td>historical new list price</td>
+<td>legacy / no current new public offer</td>
+<td>起价 USD 35,000.00</td>
+<td>约 ¥237,808</td>
+<td>ROBOTS Guide</td>
+<td>medium</td>
+<td>https://robotsguide.com/robots/freight</td>
+<td>Historical base price; not a current quotation.</td>
+</tr>
+</tbody>
+</table>
+<h3>固定机械臂价格</h3>
+<table>
+<thead>
+<tr>
+<th>BEHAVIOR型号</th>
+<th>图片</th>
+<th>销售型号或配置</th>
+<th>匹配关系</th>
+<th>价格性质</th>
+<th>供应状态</th>
+<th>原币价格</th>
+<th>人民币参考</th>
+<th>来源</th>
+<th>可信度</th>
+<th>价格链接</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Franka Research 3</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/FrankaPanda.png"><img src="assets/robots/FrankaPanda.png" alt="Franka Research 3" width="120"></a></td>
+<td>Franka Research 3</td>
+<td>exact</td>
+<td>new</td>
+<td>official enquiry</td>
+<td>询价</td>
+<td></td>
+<td>Franka Robotics</td>
+<td>high</td>
+<td>https://franka.de/franka-research-3</td>
+<td>Official page provides a purchase/enquiry flow but no public numeric price.</td>
+</tr>
+<tr>
+<td>Franka Research 3</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/FrankaPanda.png"><img src="assets/robots/FrankaPanda.png" alt="Franka Research 3" width="120"></a></td>
+<td>Franka Research 3 with FCI licence</td>
+<td>exact commercial configuration</td>
+<td>new</td>
+<td>order item; eight-week delivery shown</td>
+<td>起价 EUR 33,180.00</td>
+<td>约 ¥256,621</td>
+<td>Generation Robots</td>
+<td>medium</td>
+<td>https://www.generationrobots.com/en/403992-7-axis-franka-research-3-robotic-arm-fci-licence.html</td>
+<td>Public new-price reference for an exact FR3 system including controller and FCI; the gripper is listed separately.</td>
+</tr>
+<tr>
+<td>Trossen ViperX 300 6DOF</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/VX300S.png"><img src="assets/robots/VX300S.png" alt="Trossen ViperX 300 6DOF" width="120"></a></td>
+<td>ViperX 300 S Robot Arm, legacy 6DOF</td>
+<td>exact legacy configuration</td>
+<td>last listed new price</td>
+<td>discontinued / sold out</td>
+<td>USD 6,742.95</td>
+<td>约 ¥45,815</td>
+<td>Trossen Robotics</td>
+<td>high</td>
+<td>https://store.trossenrobotics.com/products/viperx-300-s-robot-arm</td>
+<td>Official last-listed price for the discontinued legacy arm.</td>
+</tr>
+<tr>
+<td>A1</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/A1.png"><img src="assets/robots/A1.png" alt="A1" width="120"></a></td>
+<td>Galaxea A1</td>
+<td>exact</td>
+<td>new</td>
+<td>no public exact-model price</td>
+<td>询价</td>
+<td></td>
+<td>Galaxea Dynamics</td>
+<td>high</td>
+<td>https://galaxea-dynamics.com/products/6-dof-ultra-light-robot-arm</td>
+<td>The current official store sells A1Z, not the legacy A1; no public exact legacy A1 price was found. Do not confuse with Unitree A1, and do not assign the A1Z price to this model.</td>
+</tr>
+<tr>
+<td>A1</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/A1.png"><img src="assets/robots/A1.png" alt="A1" width="120"></a></td>
+<td>Galaxea A1Z</td>
+<td>successor/reference only</td>
+<td>new</td>
+<td>in official store</td>
+<td>USD 2,999.00</td>
+<td>约 ¥20,377</td>
+<td>Galaxea Dynamics</td>
+<td>high</td>
+<td>https://galaxea-dynamics.com/collections/frontpage</td>
+<td>Reference price for current A1Z only; it is not presented as the price of the BEHAVIOR A1.</td>
+</tr>
+<tr>
+<td>Franka Research 3 mounted cart</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/FrankaMounted.png"><img src="assets/robots/FrankaMounted.png" alt="Franka Research 3 mounted cart" width="120"></a></td>
+<td>Franka Research 3 mounted on custom extrusion cart</td>
+<td>custom BEHAVIOR configuration</td>
+<td>new/custom</td>
+<td>no complete commercial bundle</td>
+<td>无公开价格</td>
+<td></td>
+<td>Franka Robotics</td>
+<td>high</td>
+<td>https://franka.de/franka-research-3</td>
+<td>The cart is a BEHAVIOR configuration, not a priced Franka product. No component prices are added together.</td>
+</tr>
+</tbody>
+</table>
+<h3>轮式机械臂机器人价格</h3>
+<table>
+<thead>
+<tr>
+<th>BEHAVIOR型号</th>
+<th>图片</th>
+<th>销售型号或配置</th>
+<th>匹配关系</th>
+<th>价格性质</th>
+<th>供应状态</th>
+<th>原币价格</th>
+<th>人民币参考</th>
+<th>来源</th>
+<th>可信度</th>
+<th>价格链接</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fetch</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/Fetch.png"><img src="assets/robots/Fetch.png" alt="Fetch" width="120"></a></td>
+<td>Fetch Mobile Manipulator</td>
+<td>exact</td>
+<td>historical new list price</td>
+<td>legacy / no current new public offer</td>
+<td>起价 USD 100,000.00</td>
+<td>约 ¥679,450</td>
+<td>ROBOTS Guide</td>
+<td>medium</td>
+<td>https://robotsguide.com/robots/fetch</td>
+<td>Historical base price for the complete Fetch mobile manipulator; not a current quotation.</td>
+</tr>
+<tr>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/Tiago.png"><img src="assets/robots/Tiago.png" alt="PAL Robotics TIAGo (dual-arm configuration)" width="120"></a></td>
+<td>PAL Robotics TIAGo dual-arm configuration</td>
+<td>exact configuration class</td>
+<td>new</td>
+<td>official request for quote</td>
+<td>询价</td>
+<td></td>
+<td>PAL Robotics</td>
+<td>high</td>
+<td>https://pal-robotics.com/robot/tiago/</td>
+<td>TIAGo Head and single-arm prices are not substituted for the dual-arm configuration.</td>
+</tr>
+<tr>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/Tiago.png"><img src="assets/robots/Tiago.png" alt="PAL Robotics TIAGo (dual-arm configuration)" width="120"></a></td>
+<td>PAL Robotics TIAGo / TIAGo++ configurations</td>
+<td>third-party indicative range</td>
+<td>new estimate</td>
+<td>commercially available</td>
+<td>USD 30,000.00–100,000.00</td>
+<td>¥203,835–¥679,450</td>
+<td>BotMarket24</td>
+<td>low</td>
+<td>https://botmarket24.com/en/robot-database/pal-tiago/</td>
+<td>Indicative family range, not an official quote for the exact dual-arm configuration.</td>
+</tr>
+<tr>
+<td>Hello Robot Stretch</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/Stretch.png"><img src="assets/robots/Stretch.png" alt="Hello Robot Stretch" width="120"></a></td>
+<td>Hello Robot Stretch 3</td>
+<td>previous-generation historical reference</td>
+<td>historical new list price</td>
+<td>superseded by Stretch 4</td>
+<td>USD 24,950.00</td>
+<td>约 ¥169,523</td>
+<td>ui44</td>
+<td>medium</td>
+<td>https://ui44.com/robots/hello-robot-stretch-3</td>
+<td>Previous-generation Stretch 3 list-price reference; BEHAVIOR names the family generically as Stretch.</td>
+</tr>
+<tr>
+<td>Hello Robot Stretch</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/Stretch.png"><img src="assets/robots/Stretch.png" alt="Hello Robot Stretch" width="120"></a></td>
+<td>Hello Robot Stretch 4</td>
+<td>current-generation reference</td>
+<td>new</td>
+<td>available; typically ships in 2–4 weeks</td>
+<td>USD 29,950.00</td>
+<td>约 ¥203,495</td>
+<td>Hello Robot</td>
+<td>high</td>
+<td>https://hello-robot.com/purchase/</td>
+<td>Current Stretch 4 price; it is a family successor reference, not proof that the BEHAVIOR asset is Stretch 4.</td>
+</tr>
+<tr>
+<td>Galaxea R1</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/R1.png"><img src="assets/robots/R1.png" alt="Galaxea R1" width="120"></a></td>
+<td>Galaxea R1 legacy 6-DOF-arm platform</td>
+<td>exact legacy family</td>
+<td>legacy</td>
+<td>no current exact-model public price</td>
+<td>无公开价格</td>
+<td></td>
+<td>Galaxea Dynamics</td>
+<td>high</td>
+<td>https://galaxea-dynamics.com/products/6-dof-general-mobile-manipulation-platform</td>
+<td>The current official store sells R1 Lite 2026, not the legacy R1; no current exact-model public price was found. Do not confuse with Unitree R1, and treat R1 Lite only as a successor reference.</td>
+</tr>
+<tr>
+<td>Galaxea R1</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/R1.png"><img src="assets/robots/R1.png" alt="Galaxea R1" width="120"></a></td>
+<td>Galaxea R1 Lite 2026</td>
+<td>successor/reference only</td>
+<td>new</td>
+<td>in stock / order inquiry</td>
+<td>USD 39,999.00</td>
+<td>约 ¥271,773</td>
+<td>Galaxea Dynamics</td>
+<td>high</td>
+<td>https://galaxea-dynamics.com/products/6-dof-general-mobile-manipulation-platform</td>
+<td>Current R1 Lite successor reference; not assigned as the legacy R1 exact price.</td>
+</tr>
+<tr>
+<td>Galaxea R1 Pro</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/R1Pro.png"><img src="assets/robots/R1Pro.png" alt="Galaxea R1 Pro" width="120"></a></td>
+<td>Galaxea R1 Pro 2026</td>
+<td>current exact family</td>
+<td>new</td>
+<td>in stock / order inquiry</td>
+<td>USD 69,999.00</td>
+<td>约 ¥475,608</td>
+<td>Galaxea Dynamics</td>
+<td>high</td>
+<td>https://galaxea-dynamics.com/products/galaxea-r1-pro-universal-humanoid-robot</td>
+<td>Package includes base, two 7-DOF arms and two G1 grippers; optional cameras and dexterous hands are excluded.</td>
+</tr>
+</tbody>
+</table>
+<h3>非商品虚拟代理</h3>
+<table>
+<thead>
+<tr>
+<th>BEHAVIOR型号</th>
+<th>图片</th>
+<th>销售型号或配置</th>
+<th>匹配关系</th>
+<th>价格性质</th>
+<th>供应状态</th>
+<th>原币价格</th>
+<th>人民币参考</th>
+<th>来源</th>
+<th>可信度</th>
+<th>价格链接</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BehaviorRobot</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/BehaviorRobot.png"><img src="assets/robots/BehaviorRobot.png" alt="BehaviorRobot" width="120"></a></td>
+<td>BehaviorRobot</td>
+<td>exact virtual agent</td>
+<td>not applicable</td>
+<td>non-commercial software model</td>
+<td>非商品</td>
+<td></td>
+<td>BEHAVIOR project</td>
+<td>high</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>Virtual agent used for VR teleoperation; it is not a commercial physical robot.</td>
+</tr>
+</tbody>
+</table>
+<p>重要边界：</p>
+<ul>
+<li>本报告按最新要求不展示任何二手价格；停产型号只保留有日期或可追溯的历史新品价。</li>
+<li>TurtleBot 2 的 USD 1,500 是 IEEE Spectrum 在 2012 年产品原型发布时给出的整机近似价格，
+  不是固定报价或当前售价。</li>
+<li>Husky A200 的 EUR 23,353.75 是专业机器人零售商的精确型号新品价；A300 仍仅作后继参考。</li>
+<li>A1 的精确旧型号没有公开价；A1Z 的 USD 2,999 仅作为当前相关型号参考。</li>
+<li>FR3 官网采用询价；Generation Robots 的 EUR 33,180 含税起价是精确商业配置的公开参考。</li>
+<li>Franka Mounted 是项目自定义推车配置，不把 FR3 与推车部件价格自行相加。</li>
+<li>Fetch 与 Freight 属于旧平台，只保留 ROBOTS Guide 的历史新品基础价。</li>
+<li>TIAGo 双臂配置以官网询价为准，USD 30,000–100,000 只是低置信第三方家族区间。</li>
+<li>Stretch 3 的 USD 24,950 是上一代历史新品参考；当前 Stretch 4 官网价为 USD 29,950。</li>
+<li>Galaxea R1 不与 Unitree R1 混用；R1 Lite 2026 的 USD 39,999 仅作旧 R1 后继型号参考。</li>
+<li>BehaviorRobot 是虚拟代理，不是可采购的实体机器人。</li>
+</ul>
+<h2>口径与结论边界</h2>
+<ul>
+<li>官网贡献者：57 人，覆盖 Core Team、Supporting Team、Alumni。</li>
+<li>论文窗口：2022-01-01 至 2026-07-01。</li>
+<li>候选发现：Crossref/OpenAlex 提供论文候选，不直接证明机器人型号。</li>
+<li>正式明细只接收论文正文、补充材料、官方项目页或官方代码明确支持的型号证据。</li>
+<li>主排名按“贡献者—论文—型号”记录数；并附不同贡献者数和不同论文数。</li>
+<li>“论文全集”是公开渠道可发现、可核验的集合，不包含未索引或不可访问全文。</li>
+</ul>
+<h2>贡献者覆盖</h2>
+<table>
+<thead>
+<tr>
+<th>group</th>
+<th>count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alumni</td>
+<td>31</td>
+</tr>
+<tr>
+<td>Core Team</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Supporting Team</td>
+<td>11</td>
+</tr>
+</tbody>
+</table>
+<h2>List 1：网站可提供的资源</h2>
+<table>
+<thead>
+<tr>
+<th>category</th>
+<th>name</th>
+<th>description</th>
+<th>url</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Benchmark</td>
+<td>BEHAVIOR-1K</td>
+<td>1,000 long-horizon household activities instantiated in OmniGibson.</td>
+<td>https://behavior.stanford.edu/</td>
+</tr>
+<tr>
+<td>Benchmark</td>
+<td>BEHAVIOR-100</td>
+<td>Earlier 100-activity benchmark instantiated in iGibson 2.0.</td>
+<td>https://behavior.stanford.edu/behavior_100/overview.html</td>
+</tr>
+<tr>
+<td>Simulator</td>
+<td>OmniGibson</td>
+<td>Interactive simulation with rigid bodies, deformables, liquids, thermal effects and transitions.</td>
+<td>https://behavior.stanford.edu/getting_started/quickstart.html</td>
+</tr>
+<tr>
+<td>Task definitions</td>
+<td>BDDL</td>
+<td>Predicate-based household task definitions and activity logic.</td>
+<td>https://behavior.stanford.edu/behavior_components/behavior_tasks.html</td>
+</tr>
+<tr>
+<td>Knowledgebase</td>
+<td>BEHAVIOR-1K Knowledgebase</td>
+<td>Browse tasks, synsets, objects, categories, scenes, transitions and attachments.</td>
+<td>https://behavior.stanford.edu/knowledgebase/</td>
+</tr>
+<tr>
+<td>3D assets</td>
+<td>Scenes</td>
+<td>Interactive household and other scene assets.</td>
+<td>https://behavior.stanford.edu/behavior_components/scenes.html</td>
+</tr>
+<tr>
+<td>3D assets</td>
+<td>Objects</td>
+<td>Thousands of annotated object assets and categories.</td>
+<td>https://behavior.stanford.edu/behavior_components/objects.html</td>
+</tr>
+<tr>
+<td>Robot software</td>
+<td>Robot models and controllers</td>
+<td>Robot embodiments, controller interfaces and sensor interfaces.</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+</tr>
+<tr>
+<td>Data collection</td>
+<td>Teleoperation</td>
+<td>JoyLo and VR teleoperation plus task sampling and data collection documentation.</td>
+<td>https://behavior.stanford.edu/behavior_components/joylo.html</td>
+</tr>
+<tr>
+<td>Dataset</td>
+<td>2026 BEHAVIOR Challenge Dataset</td>
+<td>Current challenge demonstration and evaluation data entry point.</td>
+<td>https://behavior.stanford.edu/challenge/dataset.html</td>
+</tr>
+<tr>
+<td>Evaluation</td>
+<td>2026 BEHAVIOR Challenge</td>
+<td>Current rules, baselines, leaderboard, submission guide and demo gallery.</td>
+<td>https://behavior.stanford.edu/challenge/</td>
+</tr>
+<tr>
+<td>Dataset</td>
+<td>BEHAVIOR-100 VR Dataset</td>
+<td>VR demonstrations associated with BEHAVIOR-100.</td>
+<td>https://behavior.stanford.edu/behavior_100/dataset.html</td>
+</tr>
+<tr>
+<td>Toolkit</td>
+<td>BEHAVIOR Vision Suite</td>
+<td>Controllable synthetic visual data generation using BEHAVIOR assets.</td>
+<td>https://behavior-vision-suite.github.io/</td>
+</tr>
+<tr>
+<td>Research</td>
+<td>Related Research</td>
+<td>Official index of BEHAVIOR-related projects and the Gibson simulation series.</td>
+<td>https://behavior.stanford.edu/other/related_research.html</td>
+</tr>
+<tr>
+<td>Code</td>
+<td>BEHAVIOR-1K GitHub</td>
+<td>Official source code repository.</td>
+<td>https://github.com/StanfordVL/BEHAVIOR-1K</td>
+</tr>
+</tbody>
+</table>
+<p>Challenge 年份已分别从首页和落地页提取，两处当前均为 2026 BEHAVIOR Challenge。</p>
+<h2>List 2：网站明确提及或支持的机器人、机械臂</h2>
+<table>
+<thead>
+<tr>
+<th>site_name</th>
+<th>model</th>
+<th>图片</th>
+<th>image_path</th>
+<th>image_source_url</th>
+<th>category</th>
+<th>manufacturer</th>
+<th>dof</th>
+<th>arm_model</th>
+<th>end_effector</th>
+<th>evidence_url</th>
+<th>manufacturer_evidence_url</th>
+<th>arm_evidence_url</th>
+<th>end_effector_evidence_url</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Turtlebot</td>
+<td>TurtleBot 2 / Kobuki</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/Turtlebot.png"><img src="assets/robots/Turtlebot.png" alt="TurtleBot 2 / Kobuki" width="120"></a></td>
+<td>assets/robots/Turtlebot.png</td>
+<td>https://behavior.stanford.edu/assets/robots/Turtlebot.png</td>
+<td>mobile robot</td>
+<td>Yujin Robot / Open Robotics</td>
+<td></td>
+<td></td>
+<td></td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>https://www.turtlebot.com/turtlebot2/</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Locobot</td>
+<td>LoCoBot</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/Locobot.png"><img src="assets/robots/Locobot.png" alt="LoCoBot" width="120"></a></td>
+<td>assets/robots/Locobot.png</td>
+<td>https://behavior.stanford.edu/assets/robots/Locobot.png</td>
+<td>mobile robot</td>
+<td>Trossen Robotics / Interbotix</td>
+<td></td>
+<td>LoCoBot arm (disabled)</td>
+<td></td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>https://docs.trossenrobotics.com/interbotix_xslocobots_docs/</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td></td>
+</tr>
+<tr>
+<td>Husky</td>
+<td>Clearpath Husky</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/Husky.png"><img src="assets/robots/Husky.png" alt="Clearpath Husky" width="120"></a></td>
+<td>assets/robots/Husky.png</td>
+<td>https://behavior.stanford.edu/assets/robots/Husky.png</td>
+<td>mobile robot</td>
+<td>Clearpath Robotics</td>
+<td></td>
+<td></td>
+<td></td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>https://docs.clearpathrobotics.com/docs_robots/outdoor_robots/husky/a200/user_manual_husky</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Freight</td>
+<td>Fetch Robotics Freight</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/Freight.png"><img src="assets/robots/Freight.png" alt="Fetch Robotics Freight" width="120"></a></td>
+<td>assets/robots/Freight.png</td>
+<td>https://behavior.stanford.edu/assets/robots/Freight.png</td>
+<td>mobile robot</td>
+<td>Fetch Robotics</td>
+<td></td>
+<td></td>
+<td></td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>https://fetchrobotics.github.io/docs/</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Franka</td>
+<td>Franka Research 3</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/FrankaPanda.png"><img src="assets/robots/FrankaPanda.png" alt="Franka Research 3" width="120"></a></td>
+<td>assets/robots/FrankaPanda.png</td>
+<td>https://behavior.stanford.edu/assets/robots/FrankaPanda.png</td>
+<td>stationary manipulator</td>
+<td>Franka Robotics</td>
+<td>7-DoF arm</td>
+<td>Franka Research 3</td>
+<td>parallel-jaw gripper</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>https://franka.de/franka-research-3-cobot-arm</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+</tr>
+<tr>
+<td>VX300S</td>
+<td>Trossen ViperX 300 6DOF</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/VX300S.png"><img src="assets/robots/VX300S.png" alt="Trossen ViperX 300 6DOF" width="120"></a></td>
+<td>assets/robots/VX300S.png</td>
+<td>https://behavior.stanford.edu/assets/robots/VX300S.png</td>
+<td>stationary manipulator</td>
+<td>Trossen Robotics</td>
+<td>6-DoF arm</td>
+<td>ViperX 300</td>
+<td>parallel-jaw gripper</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>https://store.trossenrobotics.com/products/viperx-300-s-robot-arm</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+</tr>
+<tr>
+<td>A1</td>
+<td>A1</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/A1.png"><img src="assets/robots/A1.png" alt="A1" width="120"></a></td>
+<td>assets/robots/A1.png</td>
+<td>https://behavior.stanford.edu/assets/robots/A1.png</td>
+<td>stationary manipulator</td>
+<td>Galaxea Dynamics</td>
+<td>6-DoF arm</td>
+<td>A1</td>
+<td>Inspire-Robots Dexterous Hand</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>https://www.robotsusa.com/Galaxea-A1-A1-Robotic-Arm.htm</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+</tr>
+<tr>
+<td>Franka Mounted</td>
+<td>Franka Research 3 mounted cart</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/FrankaMounted.png"><img src="assets/robots/FrankaMounted.png" alt="Franka Research 3 mounted cart" width="120"></a></td>
+<td>assets/robots/FrankaMounted.png</td>
+<td>https://behavior.stanford.edu/assets/robots/FrankaMounted.png</td>
+<td>stationary manipulator</td>
+<td>Franka Robotics</td>
+<td>7-DoF arm</td>
+<td>Franka Research 3</td>
+<td>parallel-jaw gripper</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>https://franka.de/franka-research-3-cobot-arm</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+</tr>
+<tr>
+<td>Fetch</td>
+<td>Fetch</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/Fetch.png"><img src="assets/robots/Fetch.png" alt="Fetch" width="120"></a></td>
+<td>assets/robots/Fetch.png</td>
+<td>https://behavior.stanford.edu/assets/robots/Fetch.png</td>
+<td>mobile manipulator</td>
+<td>Fetch Robotics</td>
+<td>7-DoF arm</td>
+<td>integrated 7-DoF Fetch arm</td>
+<td>parallel-jaw gripper</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>https://fetchrobotics.github.io/docs/</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+</tr>
+<tr>
+<td>Tiago</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/Tiago.png"><img src="assets/robots/Tiago.png" alt="PAL Robotics TIAGo (dual-arm configuration)" width="120"></a></td>
+<td>assets/robots/Tiago.png</td>
+<td>https://behavior.stanford.edu/assets/robots/Tiago.png</td>
+<td>bimanual mobile manipulator</td>
+<td>PAL Robotics</td>
+<td>2 x 7-DoF arms</td>
+<td>two integrated 7-DoF TIAGo arms</td>
+<td>two parallel-jaw grippers</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>https://pal-robotics.com/robot/tiago/</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+</tr>
+<tr>
+<td>Stretch</td>
+<td>Hello Robot Stretch</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/Stretch.png"><img src="assets/robots/Stretch.png" alt="Hello Robot Stretch" width="120"></a></td>
+<td>assets/robots/Stretch.png</td>
+<td>https://behavior.stanford.edu/assets/robots/Stretch.png</td>
+<td>mobile manipulator</td>
+<td>Hello Robot</td>
+<td>5-DoF arm</td>
+<td>integrated 5-DoF Stretch arm</td>
+<td>Stretch gripper</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>https://hello-robot.com/</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+</tr>
+<tr>
+<td>R1</td>
+<td>Galaxea R1</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/R1.png"><img src="assets/robots/R1.png" alt="Galaxea R1" width="120"></a></td>
+<td>assets/robots/R1.png</td>
+<td>https://behavior.stanford.edu/assets/robots/R1.png</td>
+<td>bimanual mobile manipulator</td>
+<td>Galaxea Dynamics</td>
+<td>2 x 6-DoF arms</td>
+<td>two integrated 6-DoF R1 arms</td>
+<td>two parallel-jaw grippers</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>https://arxiv.org/html/2503.05652</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+</tr>
+<tr>
+<td>R1 Pro</td>
+<td>Galaxea R1 Pro</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/R1Pro.png"><img src="assets/robots/R1Pro.png" alt="Galaxea R1 Pro" width="120"></a></td>
+<td>assets/robots/R1Pro.png</td>
+<td>https://behavior.stanford.edu/assets/robots/R1Pro.png</td>
+<td>bimanual mobile manipulator</td>
+<td>Galaxea Dynamics</td>
+<td>2 x 7-DoF arms</td>
+<td>two integrated 7-DoF R1 Pro arms</td>
+<td>two parallel-jaw grippers</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>https://galaxea-dynamics.com/products/galaxea-r1-pro-universal-humanoid-robot</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+</tr>
+<tr>
+<td>BehaviorRobot</td>
+<td>BehaviorRobot</td>
+<td><a href="https://behavior.stanford.edu/assets/robots/BehaviorRobot.png"><img src="assets/robots/BehaviorRobot.png" alt="BehaviorRobot" width="120"></a></td>
+<td>assets/robots/BehaviorRobot.png</td>
+<td>https://behavior.stanford.edu/assets/robots/BehaviorRobot.png</td>
+<td>VR bimanual agent proxy</td>
+<td>BEHAVIOR project</td>
+<td></td>
+<td>two virtual arms</td>
+<td>two virtual grippers</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+<td>https://behavior.stanford.edu/omnigibson/robots.html</td>
+</tr>
+</tbody>
+</table>
+<p>官网机器人文档正文称支持 12 种机器人，但页面当前实际呈现 14 个条目。本表按页面条目记录，
+并保留 Franka Mounted 等配置变体；这类变体不会被悄悄合并成另一型号。</p>
+<h2>List 3：贡献者论文中已核验的机器人/机械臂型号</h2>
+<table>
+<thead>
+<tr>
+<th>person</th>
+<th>contributor_group</th>
+<th>homepage</th>
+<th>paper</th>
+<th>year</th>
+<th>paper_url</th>
+<th>project_url</th>
+<th>doi</th>
+<th>arxiv_id</th>
+<th>model_raw</th>
+<th>model_canonical</th>
+<th>entity_type</th>
+<th>robot_type</th>
+<th>arm_model</th>
+<th>end_effector</th>
+<th>usage_context</th>
+<th>world</th>
+<th>evidence</th>
+<th>evidence_url</th>
+<th>evidence_location</th>
+<th>verification_status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chengshu Li</td>
+<td>Core Team</td>
+<td>http://chengshuli.me</td>
+<td>MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2510.18316</td>
+<td>https://momagen.github.io/</td>
+<td></td>
+<td>2510.18316</td>
+<td>Galaxea R1</td>
+<td>Galaxea R1</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>Galaxea R1 integrated arm (6-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>采集源演示并生成训练数据</td>
+<td>real and simulation</td>
+<td>Project page says source demonstrations are collected on a Galaxea R1.</td>
+<td>https://momagen.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Chengshu Li</td>
+<td>Core Team</td>
+<td>http://chengshuli.me</td>
+<td>MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2510.18316</td>
+<td>https://momagen.github.io/</td>
+<td></td>
+<td>2510.18316</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>PAL Robotics TIAGo integrated arm (7-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>跨本体轨迹生成</td>
+<td>simulation</td>
+<td>Project page says R1 demonstrations are converted into trajectories for a TIAGo robot.</td>
+<td>https://momagen.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Arpit Bahety</td>
+<td>Alumni</td>
+<td>https://arpitrf.github.io/</td>
+<td>MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2510.18316</td>
+<td>https://momagen.github.io/</td>
+<td></td>
+<td>2510.18316</td>
+<td>Galaxea R1</td>
+<td>Galaxea R1</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>Galaxea R1 integrated arm (6-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>采集源演示并生成训练数据</td>
+<td>real and simulation</td>
+<td>Project page says source demonstrations are collected on a Galaxea R1.</td>
+<td>https://momagen.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Arpit Bahety</td>
+<td>Alumni</td>
+<td>https://arpitrf.github.io/</td>
+<td>MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2510.18316</td>
+<td>https://momagen.github.io/</td>
+<td></td>
+<td>2510.18316</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>PAL Robotics TIAGo integrated arm (7-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>跨本体轨迹生成</td>
+<td>simulation</td>
+<td>Project page says R1 demonstrations are converted into trajectories for a TIAGo robot.</td>
+<td>https://momagen.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Hang Yin</td>
+<td>Core Team</td>
+<td>https://hang-yin.github.io</td>
+<td>MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2510.18316</td>
+<td>https://momagen.github.io/</td>
+<td></td>
+<td>2510.18316</td>
+<td>Galaxea R1</td>
+<td>Galaxea R1</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>Galaxea R1 integrated arm (6-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>采集源演示并生成训练数据</td>
+<td>real and simulation</td>
+<td>Project page says source demonstrations are collected on a Galaxea R1.</td>
+<td>https://momagen.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Hang Yin</td>
+<td>Core Team</td>
+<td>https://hang-yin.github.io</td>
+<td>MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2510.18316</td>
+<td>https://momagen.github.io/</td>
+<td></td>
+<td>2510.18316</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>PAL Robotics TIAGo integrated arm (7-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>跨本体轨迹生成</td>
+<td>simulation</td>
+<td>Project page says R1 demonstrations are converted into trajectories for a TIAGo robot.</td>
+<td>https://momagen.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Yunfan Jiang</td>
+<td>Supporting Team</td>
+<td>https://yunfanj.com/</td>
+<td>MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2510.18316</td>
+<td>https://momagen.github.io/</td>
+<td></td>
+<td>2510.18316</td>
+<td>Galaxea R1</td>
+<td>Galaxea R1</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>Galaxea R1 integrated arm (6-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>采集源演示并生成训练数据</td>
+<td>real and simulation</td>
+<td>Project page says source demonstrations are collected on a Galaxea R1.</td>
+<td>https://momagen.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Yunfan Jiang</td>
+<td>Supporting Team</td>
+<td>https://yunfanj.com/</td>
+<td>MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2510.18316</td>
+<td>https://momagen.github.io/</td>
+<td></td>
+<td>2510.18316</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>PAL Robotics TIAGo integrated arm (7-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>跨本体轨迹生成</td>
+<td>simulation</td>
+<td>Project page says R1 demonstrations are converted into trajectories for a TIAGo robot.</td>
+<td>https://momagen.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Josiah Wong</td>
+<td>Core Team</td>
+<td>http://jowo.me</td>
+<td>MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2510.18316</td>
+<td>https://momagen.github.io/</td>
+<td></td>
+<td>2510.18316</td>
+<td>Galaxea R1</td>
+<td>Galaxea R1</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>Galaxea R1 integrated arm (6-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>采集源演示并生成训练数据</td>
+<td>real and simulation</td>
+<td>Project page says source demonstrations are collected on a Galaxea R1.</td>
+<td>https://momagen.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Josiah Wong</td>
+<td>Core Team</td>
+<td>http://jowo.me</td>
+<td>MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2510.18316</td>
+<td>https://momagen.github.io/</td>
+<td></td>
+<td>2510.18316</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>PAL Robotics TIAGo integrated arm (7-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>跨本体轨迹生成</td>
+<td>simulation</td>
+<td>Project page says R1 demonstrations are converted into trajectories for a TIAGo robot.</td>
+<td>https://momagen.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Sujay Garlanka</td>
+<td>Alumni</td>
+<td>https://sujaygarlanka.com/</td>
+<td>MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2510.18316</td>
+<td>https://momagen.github.io/</td>
+<td></td>
+<td>2510.18316</td>
+<td>Galaxea R1</td>
+<td>Galaxea R1</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>Galaxea R1 integrated arm (6-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>采集源演示并生成训练数据</td>
+<td>real and simulation</td>
+<td>Project page says source demonstrations are collected on a Galaxea R1.</td>
+<td>https://momagen.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Sujay Garlanka</td>
+<td>Alumni</td>
+<td>https://sujaygarlanka.com/</td>
+<td>MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2510.18316</td>
+<td>https://momagen.github.io/</td>
+<td></td>
+<td>2510.18316</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>PAL Robotics TIAGo integrated arm (7-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>跨本体轨迹生成</td>
+<td>simulation</td>
+<td>Project page says R1 demonstrations are converted into trajectories for a TIAGo robot.</td>
+<td>https://momagen.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Cem Gokmen</td>
+<td>Core Team</td>
+<td>https://www.cemgokmen.com/</td>
+<td>MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2510.18316</td>
+<td>https://momagen.github.io/</td>
+<td></td>
+<td>2510.18316</td>
+<td>Galaxea R1</td>
+<td>Galaxea R1</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>Galaxea R1 integrated arm (6-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>采集源演示并生成训练数据</td>
+<td>real and simulation</td>
+<td>Project page says source demonstrations are collected on a Galaxea R1.</td>
+<td>https://momagen.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Cem Gokmen</td>
+<td>Core Team</td>
+<td>https://www.cemgokmen.com/</td>
+<td>MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2510.18316</td>
+<td>https://momagen.github.io/</td>
+<td></td>
+<td>2510.18316</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>PAL Robotics TIAGo integrated arm (7-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>跨本体轨迹生成</td>
+<td>simulation</td>
+<td>Project page says R1 demonstrations are converted into trajectories for a TIAGo robot.</td>
+<td>https://momagen.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Ruohan Zhang</td>
+<td>Core Team</td>
+<td>https://ai.stanford.edu/~zharu/</td>
+<td>MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2510.18316</td>
+<td>https://momagen.github.io/</td>
+<td></td>
+<td>2510.18316</td>
+<td>Galaxea R1</td>
+<td>Galaxea R1</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>Galaxea R1 integrated arm (6-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>采集源演示并生成训练数据</td>
+<td>real and simulation</td>
+<td>Project page says source demonstrations are collected on a Galaxea R1.</td>
+<td>https://momagen.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Ruohan Zhang</td>
+<td>Core Team</td>
+<td>https://ai.stanford.edu/~zharu/</td>
+<td>MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2510.18316</td>
+<td>https://momagen.github.io/</td>
+<td></td>
+<td>2510.18316</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>PAL Robotics TIAGo integrated arm (7-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>跨本体轨迹生成</td>
+<td>simulation</td>
+<td>Project page says R1 demonstrations are converted into trajectories for a TIAGo robot.</td>
+<td>https://momagen.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Weiyu Liu</td>
+<td>Supporting Team</td>
+<td>https://www.weiyuliu.com/</td>
+<td>MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2510.18316</td>
+<td>https://momagen.github.io/</td>
+<td></td>
+<td>2510.18316</td>
+<td>Galaxea R1</td>
+<td>Galaxea R1</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>Galaxea R1 integrated arm (6-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>采集源演示并生成训练数据</td>
+<td>real and simulation</td>
+<td>Project page says source demonstrations are collected on a Galaxea R1.</td>
+<td>https://momagen.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Weiyu Liu</td>
+<td>Supporting Team</td>
+<td>https://www.weiyuliu.com/</td>
+<td>MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2510.18316</td>
+<td>https://momagen.github.io/</td>
+<td></td>
+<td>2510.18316</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>PAL Robotics TIAGo integrated arm (7-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>跨本体轨迹生成</td>
+<td>simulation</td>
+<td>Project page says R1 demonstrations are converted into trajectories for a TIAGo robot.</td>
+<td>https://momagen.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Jiajun Wu</td>
+<td>Core Team</td>
+<td>https://jiajunwu.com/</td>
+<td>MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2510.18316</td>
+<td>https://momagen.github.io/</td>
+<td></td>
+<td>2510.18316</td>
+<td>Galaxea R1</td>
+<td>Galaxea R1</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>Galaxea R1 integrated arm (6-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>采集源演示并生成训练数据</td>
+<td>real and simulation</td>
+<td>Project page says source demonstrations are collected on a Galaxea R1.</td>
+<td>https://momagen.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Jiajun Wu</td>
+<td>Core Team</td>
+<td>https://jiajunwu.com/</td>
+<td>MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2510.18316</td>
+<td>https://momagen.github.io/</td>
+<td></td>
+<td>2510.18316</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>PAL Robotics TIAGo integrated arm (7-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>跨本体轨迹生成</td>
+<td>simulation</td>
+<td>Project page says R1 demonstrations are converted into trajectories for a TIAGo robot.</td>
+<td>https://momagen.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Roberto Martín-Martín</td>
+<td>Supporting Team</td>
+<td>https://robertomartinmartin.com/</td>
+<td>MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2510.18316</td>
+<td>https://momagen.github.io/</td>
+<td></td>
+<td>2510.18316</td>
+<td>Galaxea R1</td>
+<td>Galaxea R1</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>Galaxea R1 integrated arm (6-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>采集源演示并生成训练数据</td>
+<td>real and simulation</td>
+<td>Project page says source demonstrations are collected on a Galaxea R1.</td>
+<td>https://momagen.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Roberto Martín-Martín</td>
+<td>Supporting Team</td>
+<td>https://robertomartinmartin.com/</td>
+<td>MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2510.18316</td>
+<td>https://momagen.github.io/</td>
+<td></td>
+<td>2510.18316</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>PAL Robotics TIAGo integrated arm (7-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>跨本体轨迹生成</td>
+<td>simulation</td>
+<td>Project page says R1 demonstrations are converted into trajectories for a TIAGo robot.</td>
+<td>https://momagen.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Li Fei-Fei</td>
+<td>Core Team</td>
+<td>https://engineering.stanford.edu/people/fei-fei-li</td>
+<td>MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2510.18316</td>
+<td>https://momagen.github.io/</td>
+<td></td>
+<td>2510.18316</td>
+<td>Galaxea R1</td>
+<td>Galaxea R1</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>Galaxea R1 integrated arm (6-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>采集源演示并生成训练数据</td>
+<td>real and simulation</td>
+<td>Project page says source demonstrations are collected on a Galaxea R1.</td>
+<td>https://momagen.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Li Fei-Fei</td>
+<td>Core Team</td>
+<td>https://engineering.stanford.edu/people/fei-fei-li</td>
+<td>MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2510.18316</td>
+<td>https://momagen.github.io/</td>
+<td></td>
+<td>2510.18316</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>PAL Robotics TIAGo integrated arm (7-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>跨本体轨迹生成</td>
+<td>simulation</td>
+<td>Project page says R1 demonstrations are converted into trajectories for a TIAGo robot.</td>
+<td>https://momagen.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Yunfan Jiang</td>
+<td>Supporting Team</td>
+<td>https://yunfanj.com/</td>
+<td>BEHAVIOR Robot Suite: Streamlining Real-World Whole-Body Manipulation for Everyday Household Activities</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2503.05652</td>
+<td>https://behavior-robot-suite.github.io/</td>
+<td></td>
+<td>2503.05652</td>
+<td>Galaxea R1</td>
+<td>Galaxea R1</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>Galaxea R1 integrated arm (6-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>真实家庭任务、数据采集与策略评测</td>
+<td>real world and simulation ablation</td>
+<td>Paper Section II-A explicitly selects the Galaxea R1 platform.</td>
+<td>https://behavior-robot-suite.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Ruohan Zhang</td>
+<td>Core Team</td>
+<td>https://ai.stanford.edu/~zharu/</td>
+<td>BEHAVIOR Robot Suite: Streamlining Real-World Whole-Body Manipulation for Everyday Household Activities</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2503.05652</td>
+<td>https://behavior-robot-suite.github.io/</td>
+<td></td>
+<td>2503.05652</td>
+<td>Galaxea R1</td>
+<td>Galaxea R1</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>Galaxea R1 integrated arm (6-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>真实家庭任务、数据采集与策略评测</td>
+<td>real world and simulation ablation</td>
+<td>Paper Section II-A explicitly selects the Galaxea R1 platform.</td>
+<td>https://behavior-robot-suite.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Josiah Wong</td>
+<td>Core Team</td>
+<td>http://jowo.me</td>
+<td>BEHAVIOR Robot Suite: Streamlining Real-World Whole-Body Manipulation for Everyday Household Activities</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2503.05652</td>
+<td>https://behavior-robot-suite.github.io/</td>
+<td></td>
+<td>2503.05652</td>
+<td>Galaxea R1</td>
+<td>Galaxea R1</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>Galaxea R1 integrated arm (6-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>真实家庭任务、数据采集与策略评测</td>
+<td>real world and simulation ablation</td>
+<td>Paper Section II-A explicitly selects the Galaxea R1 platform.</td>
+<td>https://behavior-robot-suite.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Chen Wang</td>
+<td>Alumni</td>
+<td>https://www.chenwangjeremy.net/</td>
+<td>BEHAVIOR Robot Suite: Streamlining Real-World Whole-Body Manipulation for Everyday Household Activities</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2503.05652</td>
+<td>https://behavior-robot-suite.github.io/</td>
+<td></td>
+<td>2503.05652</td>
+<td>Galaxea R1</td>
+<td>Galaxea R1</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>Galaxea R1 integrated arm (6-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>真实家庭任务、数据采集与策略评测</td>
+<td>real world and simulation ablation</td>
+<td>Paper Section II-A explicitly selects the Galaxea R1 platform.</td>
+<td>https://behavior-robot-suite.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Hang Yin</td>
+<td>Core Team</td>
+<td>https://hang-yin.github.io</td>
+<td>BEHAVIOR Robot Suite: Streamlining Real-World Whole-Body Manipulation for Everyday Household Activities</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2503.05652</td>
+<td>https://behavior-robot-suite.github.io/</td>
+<td></td>
+<td>2503.05652</td>
+<td>Galaxea R1</td>
+<td>Galaxea R1</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>Galaxea R1 integrated arm (6-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>真实家庭任务、数据采集与策略评测</td>
+<td>real world and simulation ablation</td>
+<td>Paper Section II-A explicitly selects the Galaxea R1 platform.</td>
+<td>https://behavior-robot-suite.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Cem Gokmen</td>
+<td>Core Team</td>
+<td>https://www.cemgokmen.com/</td>
+<td>BEHAVIOR Robot Suite: Streamlining Real-World Whole-Body Manipulation for Everyday Household Activities</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2503.05652</td>
+<td>https://behavior-robot-suite.github.io/</td>
+<td></td>
+<td>2503.05652</td>
+<td>Galaxea R1</td>
+<td>Galaxea R1</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>Galaxea R1 integrated arm (6-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>真实家庭任务、数据采集与策略评测</td>
+<td>real world and simulation ablation</td>
+<td>Paper Section II-A explicitly selects the Galaxea R1 platform.</td>
+<td>https://behavior-robot-suite.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Jiajun Wu</td>
+<td>Core Team</td>
+<td>https://jiajunwu.com/</td>
+<td>BEHAVIOR Robot Suite: Streamlining Real-World Whole-Body Manipulation for Everyday Household Activities</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2503.05652</td>
+<td>https://behavior-robot-suite.github.io/</td>
+<td></td>
+<td>2503.05652</td>
+<td>Galaxea R1</td>
+<td>Galaxea R1</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>Galaxea R1 integrated arm (6-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>真实家庭任务、数据采集与策略评测</td>
+<td>real world and simulation ablation</td>
+<td>Paper Section II-A explicitly selects the Galaxea R1 platform.</td>
+<td>https://behavior-robot-suite.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>Li Fei-Fei</td>
+<td>Core Team</td>
+<td>https://engineering.stanford.edu/people/fei-fei-li</td>
+<td>BEHAVIOR Robot Suite: Streamlining Real-World Whole-Body Manipulation for Everyday Household Activities</td>
+<td>2025</td>
+<td>https://arxiv.org/abs/2503.05652</td>
+<td>https://behavior-robot-suite.github.io/</td>
+<td></td>
+<td>2503.05652</td>
+<td>Galaxea R1</td>
+<td>Galaxea R1</td>
+<td>robot</td>
+<td>bimanual mobile manipulator</td>
+<td>Galaxea R1 integrated arm (6-DoF)</td>
+<td>parallel-jaw gripper</td>
+<td>真实家庭任务、数据采集与策略评测</td>
+<td>real world and simulation ablation</td>
+<td>Paper Section II-A explicitly selects the Galaxea R1 platform.</td>
+<td>https://behavior-robot-suite.github.io/</td>
+<td>official project page</td>
+<td>verified</td>
+</tr>
+</tbody>
+</table>
+<h2>型号整体统计</h2>
+<table>
+<thead>
+<tr>
+<th>entity_type</th>
+<th>model</th>
+<th>record_count</th>
+<th>unique_people</th>
+<th>unique_papers</th>
+<th>rank_within_type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>robot</td>
+<td>Galaxea R1</td>
+<td>20</td>
+<td>13</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>robot</td>
+<td>PAL Robotics TIAGo (dual-arm configuration)</td>
+<td>12</td>
+<td>12</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>arm</td>
+<td>Galaxea R1 integrated arm (6-DoF)</td>
+<td>20</td>
+<td>13</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>arm</td>
+<td>PAL Robotics TIAGo integrated arm (7-DoF)</td>
+<td>12</td>
+<td>12</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>end_effector</td>
+<td>parallel-jaw gripper</td>
+<td>32</td>
+<td>13</td>
+<td>2</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><code>record_count</code> 是贡献者—论文—型号记录数；<code>unique_people</code> 和 <code>unique_papers</code>
+分别是去重人数与论文数。榜单只使用 <code>verification_status=verified</code> 的明确型号。</p>
+<h2>已确认机器人研究但型号未披露</h2>
+<table>
+<thead>
+<tr>
+<th>person</th>
+<th>contributor_group</th>
+<th>homepage</th>
+<th>paper</th>
+<th>year</th>
+<th>paper_url</th>
+<th>doi</th>
+<th>arxiv_id</th>
+<th>verification_status</th>
+<th>model_note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Roger Dai</td>
+<td>Alumni</td>
+<td>https://rogerdai1217.github.io/</td>
+<td>Automated Creation of Digital Cousins for Robust Policy Learning</td>
+<td>2024</td>
+<td>https://arxiv.org/abs/2410.07408</td>
+<td></td>
+<td>2410.07408</td>
+<td>partial</td>
+<td>The searchable paper and official project page describe robot-policy experiments but do not explicitly name the physical robot model; no model is inferred from images.</td>
+</tr>
+<tr>
+<td>Josiah Wong</td>
+<td>Core Team</td>
+<td>http://jowo.me</td>
+<td>Automated Creation of Digital Cousins for Robust Policy Learning</td>
+<td>2024</td>
+<td>https://arxiv.org/abs/2410.07408</td>
+<td></td>
+<td>2410.07408</td>
+<td>partial</td>
+<td>The searchable paper and official project page describe robot-policy experiments but do not explicitly name the physical robot model; no model is inferred from images.</td>
+</tr>
+<tr>
+<td>Yunfan Jiang</td>
+<td>Supporting Team</td>
+<td>https://yunfanj.com/</td>
+<td>Automated Creation of Digital Cousins for Robust Policy Learning</td>
+<td>2024</td>
+<td>https://arxiv.org/abs/2410.07408</td>
+<td></td>
+<td>2410.07408</td>
+<td>partial</td>
+<td>The searchable paper and official project page describe robot-policy experiments but do not explicitly name the physical robot model; no model is inferred from images.</td>
+</tr>
+<tr>
+<td>Chen Wang</td>
+<td>Alumni</td>
+<td>https://www.chenwangjeremy.net/</td>
+<td>Automated Creation of Digital Cousins for Robust Policy Learning</td>
+<td>2024</td>
+<td>https://arxiv.org/abs/2410.07408</td>
+<td></td>
+<td>2410.07408</td>
+<td>partial</td>
+<td>The searchable paper and official project page describe robot-policy experiments but do not explicitly name the physical robot model; no model is inferred from images.</td>
+</tr>
+<tr>
+<td>Cem Gokmen</td>
+<td>Core Team</td>
+<td>https://www.cemgokmen.com/</td>
+<td>Automated Creation of Digital Cousins for Robust Policy Learning</td>
+<td>2024</td>
+<td>https://arxiv.org/abs/2410.07408</td>
+<td></td>
+<td>2410.07408</td>
+<td>partial</td>
+<td>The searchable paper and official project page describe robot-policy experiments but do not explicitly name the physical robot model; no model is inferred from images.</td>
+</tr>
+<tr>
+<td>Ruohan Zhang</td>
+<td>Core Team</td>
+<td>https://ai.stanford.edu/~zharu/</td>
+<td>Automated Creation of Digital Cousins for Robust Policy Learning</td>
+<td>2024</td>
+<td>https://arxiv.org/abs/2410.07408</td>
+<td></td>
+<td>2410.07408</td>
+<td>partial</td>
+<td>The searchable paper and official project page describe robot-policy experiments but do not explicitly name the physical robot model; no model is inferred from images.</td>
+</tr>
+<tr>
+<td>Jiajun Wu</td>
+<td>Core Team</td>
+<td>https://jiajunwu.com/</td>
+<td>Automated Creation of Digital Cousins for Robust Policy Learning</td>
+<td>2024</td>
+<td>https://arxiv.org/abs/2410.07408</td>
+<td></td>
+<td>2410.07408</td>
+<td>partial</td>
+<td>The searchable paper and official project page describe robot-policy experiments but do not explicitly name the physical robot model; no model is inferred from images.</td>
+</tr>
+<tr>
+<td>Li Fei-Fei</td>
+<td>Core Team</td>
+<td>https://engineering.stanford.edu/people/fei-fei-li</td>
+<td>Automated Creation of Digital Cousins for Robust Policy Learning</td>
+<td>2024</td>
+<td>https://arxiv.org/abs/2410.07408</td>
+<td></td>
+<td>2410.07408</td>
+<td>partial</td>
+<td>The searchable paper and official project page describe robot-policy experiments but do not explicitly name the physical robot model; no model is inferred from images.</td>
+</tr>
+</tbody>
+</table>
+<h2>自动发现、等待全文核验的候选论文</h2>
+<p>公共学术索引共保留 70 条“贡献者—候选论文”记录。为避免把题目或摘要中的
+robot 关键词误当作实验平台，这些记录不进入 List 3 和型号排名。完整清单见
+<a href="paper_candidates.csv"><code>paper_candidates.csv</code></a>。</p>
+<h2>可复现方法</h2>
+<ol>
+<li><code>python -m scripts.collect_research --discover-crossref</code> 更新官网名册和无密钥候选；
+   有 OpenAlex API key 或匿名服务恢复后可追加 <code>--discover-openalex</code>。</li>
+<li>对候选论文全文核验实际实验/数据/仿真平台，把证据写入 <code>data/catalog.json</code>。</li>
+<li><code>python scripts/build_catalog.py</code> 重新生成三张主表、未决表、统计表和本报告。</li>
+<li><code>python -m pytest</code> 验证解析、时间过滤、别名归一化、去重和统计。</li>
+</ol></body>
+</html>
