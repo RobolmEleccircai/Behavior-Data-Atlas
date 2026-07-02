@@ -1,0 +1,15 @@
+﻿check,passed,evidence
+summary_网站资源,True,CSV=15
+summary_官网贡献者,True,CSV=57
+summary_网站机器人页面实际整理出,True,CSV=14
+summary_已核验贡献者—论文—型号记录,True,CSV=32
+summary_待全文核验的贡献者—论文候选,True,CSV=70
+model_statistics_recomputed,True,rows=5
+paper_records_unique,True,rows=32
+verified_records_have_evidence,True,verified=32
+paper_year_window,True,min=2025 max=2025
+price_model_coverage,True,models=14
+no_second_hand_prices,True,price_rows=20
+currency_conversion,True,errors=
+robot_images_present,True,images=14/14
+validated_links,True,ok=60/60

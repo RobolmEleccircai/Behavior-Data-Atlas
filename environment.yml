@@ -1,0 +1,11 @@
+name: behavior-data
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - requests>=2.32
+  - beautifulsoup4>=4.12
+  - lxml>=5.3
+  - pandas>=2.2
+  - pytest>=8.3
+

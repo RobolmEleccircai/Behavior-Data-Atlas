@@ -1,0 +1,109 @@
+{
+  "scope": {
+    "checked_at": "2026-07-02",
+    "paper_scope": "Papers linked by the official BEHAVIOR Related Research page whose authors overlap the official BEHAVIOR contributor roster.",
+    "count_rule": "A model/person pair counts once even if the same paper mentions the model repeatedly. Paper count is the number of distinct papers using that model."
+  },
+  "resources": [
+    {"category": "Benchmark", "name": "BEHAVIOR-1K", "description": "1,000 long-horizon household activities instantiated in OmniGibson.", "url": "https://behavior.stanford.edu/"},
+    {"category": "Benchmark", "name": "BEHAVIOR-100", "description": "Earlier 100-activity benchmark instantiated in iGibson 2.0.", "url": "https://behavior.stanford.edu/behavior_100/overview.html"},
+    {"category": "Simulator", "name": "OmniGibson", "description": "Interactive simulation with rigid bodies, deformables, liquids, thermal effects and transitions.", "url": "https://behavior.stanford.edu/getting_started/quickstart.html"},
+    {"category": "Task definitions", "name": "BDDL", "description": "Predicate-based household task definitions and activity logic.", "url": "https://behavior.stanford.edu/behavior_components/behavior_tasks.html"},
+    {"category": "Knowledgebase", "name": "BEHAVIOR-1K Knowledgebase", "description": "Browse tasks, synsets, objects, categories, scenes, transitions and attachments.", "url": "https://behavior.stanford.edu/knowledgebase/"},
+    {"category": "3D assets", "name": "Scenes", "description": "Interactive household and other scene assets.", "url": "https://behavior.stanford.edu/behavior_components/scenes.html"},
+    {"category": "3D assets", "name": "Objects", "description": "Thousands of annotated object assets and categories.", "url": "https://behavior.stanford.edu/behavior_components/objects.html"},
+    {"category": "Robot software", "name": "Robot models and controllers", "description": "Robot embodiments, controller interfaces and sensor interfaces.", "url": "https://behavior.stanford.edu/omnigibson/robots.html"},
+    {"category": "Data collection", "name": "Teleoperation", "description": "JoyLo and VR teleoperation plus task sampling and data collection documentation.", "url": "https://behavior.stanford.edu/behavior_components/joylo.html"},
+    {"category": "Dataset", "name": "BEHAVIOR Challenge Dataset", "description": "Current challenge demonstration and evaluation data entry point.", "url": "https://behavior.stanford.edu/challenge/dataset.html"},
+    {"category": "Evaluation", "name": "BEHAVIOR Challenge", "description": "Current rules, baselines, leaderboard, submission guide and demo gallery.", "url": "https://behavior.stanford.edu/challenge/"},
+    {"category": "Dataset", "name": "BEHAVIOR-100 VR Dataset", "description": "VR demonstrations associated with BEHAVIOR-100.", "url": "https://behavior.stanford.edu/behavior_100/dataset.html"},
+    {"category": "Toolkit", "name": "BEHAVIOR Vision Suite", "description": "Controllable synthetic visual data generation using BEHAVIOR assets.", "url": "https://behavior-vision-suite.github.io/"},
+    {"category": "Research", "name": "Related Research", "description": "Official index of BEHAVIOR-related projects and the Gibson simulation series.", "url": "https://behavior.stanford.edu/other/related_research.html"},
+    {"category": "Code", "name": "BEHAVIOR-1K GitHub", "description": "Official source code repository.", "url": "https://github.com/StanfordVL/BEHAVIOR-1K"}
+  ],
+  "robots": [
+    {"site_name": "Turtlebot", "model": "TurtleBot 2 / Kobuki", "type": "mobile robot", "arm_model": "", "dof": "", "source": "https://behavior.stanford.edu/omnigibson/robots.html"},
+    {"site_name": "Locobot", "model": "LoCoBot", "type": "mobile robot", "arm_model": "LoCoBot arm present but disabled in OmniGibson model", "dof": "", "source": "https://behavior.stanford.edu/omnigibson/robots.html"},
+    {"site_name": "Husky", "model": "Clearpath Husky", "type": "mobile robot", "arm_model": "", "dof": "", "source": "https://behavior.stanford.edu/omnigibson/robots.html"},
+    {"site_name": "Freight", "model": "Fetch Robotics Freight", "type": "mobile robot", "arm_model": "", "dof": "", "source": "https://behavior.stanford.edu/omnigibson/robots.html"},
+    {"site_name": "Franka", "model": "Franka Research 3", "type": "stationary manipulator", "arm_model": "Franka Research 3; optional Allegro, LEAP or Inspire hand variants", "dof": "7-DoF arm", "source": "https://behavior.stanford.edu/omnigibson/robots.html"},
+    {"site_name": "VX300S", "model": "Trossen ViperX 300 6DOF", "type": "stationary manipulator", "arm_model": "ViperX 300", "dof": "6-DoF arm", "source": "https://behavior.stanford.edu/omnigibson/robots.html"},
+    {"site_name": "A1", "model": "A1", "type": "stationary manipulator", "arm_model": "A1 with Inspire-Robots dexterous hand", "dof": "6-DoF arm", "source": "https://behavior.stanford.edu/omnigibson/robots.html"},
+    {"site_name": "Franka Mounted", "model": "Franka Research 3 mounted cart", "type": "stationary manipulator", "arm_model": "Franka Research 3", "dof": "7-DoF arm", "source": "https://behavior.stanford.edu/omnigibson/robots.html"},
+    {"site_name": "Fetch", "model": "Fetch", "type": "mobile manipulator", "arm_model": "Integrated Fetch arm", "dof": "7-DoF arm", "source": "https://behavior.stanford.edu/omnigibson/robots.html"},
+    {"site_name": "Tiago", "model": "PAL Robotics TIAGo (dual-arm configuration)", "type": "bimanual mobile manipulator", "arm_model": "Two integrated TIAGo arms", "dof": "2 x 7-DoF arms", "source": "https://behavior.stanford.edu/omnigibson/robots.html"},
+    {"site_name": "Stretch", "model": "Hello Robot Stretch", "type": "mobile manipulator", "arm_model": "Integrated Stretch arm", "dof": "5-DoF arm", "source": "https://behavior.stanford.edu/omnigibson/robots.html"},
+    {"site_name": "R1", "model": "Galaxea R1", "type": "bimanual mobile manipulator", "arm_model": "Two integrated R1 arms", "dof": "2 x 6-DoF arms", "source": "https://behavior.stanford.edu/omnigibson/robots.html"},
+    {"site_name": "R1 Pro", "model": "Galaxea R1 Pro", "type": "bimanual mobile manipulator", "arm_model": "Two integrated R1 Pro arms", "dof": "2 x 7-DoF arms", "source": "https://behavior.stanford.edu/omnigibson/robots.html"},
+    {"site_name": "BehaviorRobot", "model": "BehaviorRobot", "type": "VR bimanual agent proxy", "arm_model": "Two virtual arms", "dof": "", "source": "https://behavior.stanford.edu/omnigibson/robots.html"}
+  ],
+  "papers": [
+    {
+      "title": "MoMaGen: Generating Demonstrations under Soft and Hard Constraints for Multi-Step Bimanual Mobile Manipulation",
+      "paper_url": "https://arxiv.org/abs/2510.18316",
+      "project_url": "https://momagen.github.io/",
+      "models": [
+        {"model": "Galaxea R1", "type": "bimanual mobile manipulator", "arm_model": "Two integrated R1 arms", "evidence": "Project page says source demonstrations are collected on a Galaxea R1."},
+        {"model": "PAL Robotics TIAGo (dual-arm configuration)", "type": "bimanual mobile manipulator", "arm_model": "Two integrated TIAGo arms", "evidence": "Project page says R1 demonstrations are converted into trajectories for a TIAGo robot."}
+      ],
+      "authors": [
+        {"name": "Chengshu Li", "homepage": "https://www.chengshuli.me/"},
+        {"name": "Mengdi Xu", "homepage": "https://mxu34.github.io/"},
+        {"name": "Arpit Bahety", "homepage": "https://arpitrf.github.io/"},
+        {"name": "Hang Yin", "homepage": "https://hang-yin.github.io/"},
+        {"name": "Yunfan Jiang", "homepage": "https://yunfanj.com/"},
+        {"name": "Josiah Wong", "homepage": "https://jowo.me/"},
+        {"name": "Sujay Garlanka", "homepage": "https://sujaygarlanka.com/"},
+        {"name": "Cem Gokmen", "homepage": "https://www.cemgokmen.com/"},
+        {"name": "Ruohan Zhang", "homepage": "https://ai.stanford.edu/~zharu/"},
+        {"name": "Weiyu Liu", "homepage": "https://www.weiyuliu.com/"},
+        {"name": "Jiajun Wu", "homepage": "https://jiajunwu.com/"},
+        {"name": "Roberto Martin-Martin", "homepage": "https://robertomartinmartin.com/"},
+        {"name": "Li Fei-Fei", "homepage": "https://profiles.stanford.edu/fei-fei-li"}
+      ]
+    },
+    {
+      "title": "BEHAVIOR Robot Suite: Streamlining Real-World Whole-Body Manipulation for Everyday Household Activities",
+      "paper_url": "https://arxiv.org/abs/2503.05652",
+      "project_url": "https://behavior-robot-suite.github.io/",
+      "models": [
+        {"model": "Galaxea R1", "type": "bimanual mobile manipulator", "arm_model": "Two integrated 6-DoF R1 arms", "evidence": "Paper Section II-A explicitly selects the Galaxea R1 platform."}
+      ],
+      "authors": [
+        {"name": "Yunfan Jiang", "homepage": "https://yunfanj.com/"},
+        {"name": "Ruohan Zhang", "homepage": "https://ai.stanford.edu/~zharu/"},
+        {"name": "Josiah Wong", "homepage": "https://jowo.me/"},
+        {"name": "Chen Wang", "homepage": "https://www.chenwangjeremy.net/"},
+        {"name": "Hang Yin", "homepage": "https://hang-yin.github.io/"},
+        {"name": "Cem Gokmen", "homepage": "https://www.cemgokmen.com/"},
+        {"name": "Jiajun Wu", "homepage": "https://jiajunwu.com/"},
+        {"name": "Li Fei-Fei", "homepage": "https://profiles.stanford.edu/fei-fei-li"}
+      ]
+    },
+    {
+      "title": "Automated Creation of Digital Cousins for Robust Policy Learning",
+      "paper_url": "https://arxiv.org/abs/2410.07408",
+      "project_url": "https://digital-cousins.github.io/",
+      "models": [],
+      "model_note": "The searchable paper and official project page describe robot-policy experiments but do not explicitly name the physical robot model; no model is inferred from images.",
+      "authors": [
+        {"name": "Tianyuan Dai", "homepage": "https://rogerdai1217.github.io/"},
+        {"name": "Josiah Wong", "homepage": "https://jowo.me/"},
+        {"name": "Yunfan Jiang", "homepage": "https://yunfanj.com/"},
+        {"name": "Chen Wang", "homepage": "https://www.chenwangjeremy.net/"},
+        {"name": "Cem Gokmen", "homepage": "https://www.cemgokmen.com/"},
+        {"name": "Ruohan Zhang", "homepage": "https://ai.stanford.edu/~zharu/"},
+        {"name": "Jiajun Wu", "homepage": "https://jiajunwu.com/"},
+        {"name": "Li Fei-Fei", "homepage": "https://profiles.stanford.edu/fei-fei-li"}
+      ]
+    },
+    {
+      "title": "BEHAVIOR Vision Suite: Customizable Dataset Generation via Simulation",
+      "paper_url": "https://arxiv.org/abs/2405.09546",
+      "project_url": "https://behavior-vision-suite.github.io/",
+      "models": [],
+      "model_note": "This is a vision dataset-generation paper; no physical robot or arm model is reported as an experimental platform.",
+      "authors": []
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+﻿entity_type,model,record_count,unique_people,unique_papers,rank_within_type
+robot,Galaxea R1,20,13,2,1
+robot,PAL Robotics TIAGo (dual-arm configuration),12,12,1,2
+arm,Galaxea R1 integrated arm (6-DoF),20,13,2,1
+arm,PAL Robotics TIAGo integrated arm (7-DoF),12,12,1,2
+end_effector,parallel-jaw gripper,32,13,2,1

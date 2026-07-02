@@ -1,0 +1,16 @@
+﻿category,name,description,url
+Benchmark,BEHAVIOR-1K,"1,000 long-horizon household activities instantiated in OmniGibson.",https://behavior.stanford.edu/
+Benchmark,BEHAVIOR-100,Earlier 100-activity benchmark instantiated in iGibson 2.0.,https://behavior.stanford.edu/behavior_100/overview.html
+Simulator,OmniGibson,"Interactive simulation with rigid bodies, deformables, liquids, thermal effects and transitions.",https://behavior.stanford.edu/getting_started/quickstart.html
+Task definitions,BDDL,Predicate-based household task definitions and activity logic.,https://behavior.stanford.edu/behavior_components/behavior_tasks.html
+Knowledgebase,BEHAVIOR-1K Knowledgebase,"Browse tasks, synsets, objects, categories, scenes, transitions and attachments.",https://behavior.stanford.edu/knowledgebase/
+3D assets,Scenes,Interactive household and other scene assets.,https://behavior.stanford.edu/behavior_components/scenes.html
+3D assets,Objects,Thousands of annotated object assets and categories.,https://behavior.stanford.edu/behavior_components/objects.html
+Robot software,Robot models and controllers,"Robot embodiments, controller interfaces and sensor interfaces.",https://behavior.stanford.edu/omnigibson/robots.html
+Data collection,Teleoperation,JoyLo and VR teleoperation plus task sampling and data collection documentation.,https://behavior.stanford.edu/behavior_components/joylo.html
+Dataset,2026 BEHAVIOR Challenge Dataset,Current challenge demonstration and evaluation data entry point.,https://behavior.stanford.edu/challenge/dataset.html
+Evaluation,2026 BEHAVIOR Challenge,"Current rules, baselines, leaderboard, submission guide and demo gallery.",https://behavior.stanford.edu/challenge/
+Dataset,BEHAVIOR-100 VR Dataset,VR demonstrations associated with BEHAVIOR-100.,https://behavior.stanford.edu/behavior_100/dataset.html
+Toolkit,BEHAVIOR Vision Suite,Controllable synthetic visual data generation using BEHAVIOR assets.,https://behavior-vision-suite.github.io/
+Research,Related Research,Official index of BEHAVIOR-related projects and the Gibson simulation series.,https://behavior.stanford.edu/other/related_research.html
+Code,BEHAVIOR-1K GitHub,Official source code repository.,https://github.com/StanfordVL/BEHAVIOR-1K
